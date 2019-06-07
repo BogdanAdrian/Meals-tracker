@@ -1,0 +1,23 @@
+@import '../../styles/common.scss';
+
+.toolbar {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: $margin-S;
+  font-size: $font-size-large;
+  cursor: pointer;
+
+  .invite-input {
+    margin: 0 $margin-R;
+    width: 250px;
+    border: 1px solid $secondary2;
+  }
+
+  .toolbar-button {
+    margin-right: $margin-S;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}

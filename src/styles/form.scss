@@ -1,0 +1,22 @@
+@import './common.scss';
+
+input {
+  padding-left: $margin-XXS;
+  border-radius: $border-radius;
+  border-style: none;
+  height: 26px;
+}
+
+input[name="email"]:invalid {
+  border: 1px solid $error;
+}
+
+button {
+  cursor: pointer;
+  background-color: $stayHealthy5;
+  color: $white !important;
+  height: 32px;
+  border: none;
+  border-radius: $border-radius;
+  font-size: $font-size-medium;
+}

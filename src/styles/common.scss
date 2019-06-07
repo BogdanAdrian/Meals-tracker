@@ -1,0 +1,98 @@
+// Forms
+$form-element-height: 26px;
+
+// Brand Colors
+$stayHealthy1: #c7e9d0;
+$stayHealthy2: #9EC8BA;
+$stayHealthy3: #7AA7A3;
+$stayHealthy4: #5C868C;
+$stayHealthy5: #436773;
+$stayHealthy6: #2F4858;
+
+$complementary1: #B36B6D;
+$complementary2: #FFCCCD;
+
+$secondary1: #4b6672;
+$secondary2: #446773;
+
+$selected-color: #ADE0F3;
+$hover-color: #e2f1f6;
+
+// Other colors
+$white: #ffffff;
+$grey: #d6d7da;
+
+// Error & validation
+$success: #09b47b;
+$error: #ed1818;
+$warning: #ffa166;
+
+// Background colors
+$bg_warning: #fff7ec;
+$bg_error: #feeff2;
+$bg_success: #f0f9f7;
+$bg_info: #effcff;
+
+// Units
+$unit_XXS: 5px;
+$unit_XS: 10px;
+$unit_S: 13px;
+$unit_R: 17px;
+$unit_M: 27px;
+$unit_L: 50px;
+
+// Margins
+$margin-XXS: $unit_XXS;
+$margin-XS: $unit_XS;
+$margin-S: $unit_S;
+$margin-R: $unit_R;
+$margin-M: $unit_M;
+$margin-L: $unit_L;
+
+// Borders
+$border: 1px solid $grey;
+$border-error: 1px solid $error;
+
+// Border radiuses
+$border-radius: 4px;
+$border-radius-large: 10px;
+
+// Shadows
+$box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+
+// Box-sizing
+$box-sizing: border-box;
+
+// Font sizes
+$font-size-small: 12px;
+$font-size-medium: 14px;
+$font-size-large: 16px;
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.disabled {
+  opacity: .7;
+  pointer-events: none;
+  cursor: not-allowed;
+
+  &:hover {
+    cursor: not-allowed;
+  }
+}
+
+@mixin truncate-text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

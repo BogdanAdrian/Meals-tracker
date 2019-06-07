@@ -1,0 +1,41 @@
+@import '../../../styles/common.scss';
+
+.user {
+  min-width: 320px;
+  max-height: 450px;
+  overflow-y: auto;
+  color: $secondary2;
+
+  .user-modal-body {
+    input {
+      border: 1px solid $secondary2;
+    }
+    input[type="file"] {
+      border: none;
+    }
+
+    .profile-picture-wrapper {
+      display: flex;
+      margin: -150px 0 $margin-L 0;
+  
+      .profile-picture {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+      }
+  
+      label {
+        cursor: pointer;
+      }
+  
+      input[type="file"] {
+        display: none;
+      }
+    }
+
+    .settings {
+      width: 100%;
+    }
+    
+  }
+}

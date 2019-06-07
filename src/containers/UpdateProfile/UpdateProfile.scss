@@ -1,0 +1,28 @@
+@import '../../styles/common.scss';
+
+.update-profile {
+  height: 100%;
+  width: 100%;
+  @extend %flex-center;
+  flex-direction: column;
+
+  > * {
+    margin-bottom: $margin-R;
+  }
+
+  .select-with-label,
+  .input-with-label {
+    width: 25%;
+
+    input {
+      border: 1px solid #446773;
+    }
+  }
+
+  .photo-loader {
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}

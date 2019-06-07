@@ -1,0 +1,36 @@
+@import '../../styles/common.scss';
+
+.email-validation {
+  @extend %flex-center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: $stayHealthy1;
+
+  .message-box {
+    max-width: 320px;
+    padding: $margin-M;
+    border-radius: $border-radius-large;
+    color: $secondary1;
+    background-color: white;
+    margin-bottom: $margin-S;
+    border: 1px solid $secondary1;
+  }
+
+  .buttons {
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    button {
+      margin: 0 10px;
+    }
+
+    .try-again {
+      color: $stayHealthy4 !important;
+      background-color: white;
+    }
+  }
+  
+}

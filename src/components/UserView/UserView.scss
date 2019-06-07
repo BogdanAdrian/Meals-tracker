@@ -1,0 +1,15 @@
+.user-view {
+
+  .role-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .select-with-label,
+  .input-with-label {
+
+    input {
+      border: 1px solid #446773;
+    }
+  }
+}

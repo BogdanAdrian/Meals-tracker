@@ -1,0 +1,29 @@
+@import '../../styles/common.scss';
+
+.modal-footer {
+  width: 100%;
+  padding: 24px 0 0 0;
+  border: none;
+
+  &.left {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  &.right {
+    text-align: right;
+    align-items: flex-end;
+  }
+
+  &.center {
+    text-align: center;
+    align-items: center;
+  }
+
+  .confirm {
+    color: $secondary2 !important;
+    border: 1px solid $secondary2;
+    background-color: white;
+    margin-left: $margin-S;
+  }
+}

@@ -1,0 +1,51 @@
+@import '../../styles/common.scss';
+@import '../../styles/form.scss';
+
+$login-form-width: 250px;
+
+.login {
+  @extend %flex-center;
+  background-color: $stayHealthy1;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    width: $login-form-width;
+
+    & > * {
+      margin-top: $margin-XS;
+    }
+
+    .sign-up {
+      font-size: $font-size-small;
+      margin-top: $margin-R;
+      color: blue;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+
+
+  .warning {
+    color: $error;
+    font-size: $font-size-small;
+    text-align: center;
+  }
+
+  .social-media-buttons {
+    display: flex;
+    position: absolute;
+    bottom: $margin-L;
+    width: $login-form-width;
+    justify-content: center;
+  }
+
+  .social-media-button {
+    font-size: 30px;
+    margin: 0 $margin-XS;
+    cursor: pointer;
+  }
+}
